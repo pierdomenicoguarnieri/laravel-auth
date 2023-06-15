@@ -35,6 +35,10 @@
               </li>
             @endif
           @else
+            <li class="nav-item">
+              <span class="nav-link">{{Auth::user()->name}}</span>
+            </li>
+
             <li>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" class="ms-3">
                 @csrf
