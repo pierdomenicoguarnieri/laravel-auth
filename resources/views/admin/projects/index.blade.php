@@ -6,6 +6,12 @@
     Projects Index
   </h2>
 
+    @if(session('deleted'))
+      <div class="alert alert-success mb-2" role="alert">
+        {{session('deleted')}}
+      </div>
+    @endif
+
   <div class="pg-table-wrapper rounded-2 border border-1 overflow-hidden shadow-sm">
     <table class="table m-0">
       <thead>
@@ -49,7 +55,18 @@
           <td class="text-center">
             <a href="{{route('admin.projects.show', $project)}}" class="btn btn-primary" title="Show"><i class="fa-solid fa-eye"></i></a>
             <a href="{{route('admin.projects.edit', $project)}}" class="btn btn-warning" title="Edit"><i class="fa-solid fa-pencil"></i></a>
-            <a href="" class="btn btn-danger" title="Delete"><i class="fa-solid fa-trash-can"></i></a>
+
+            <form
+              action="{{route('admin.projects.destroy', $project)}}"
+              method="POST"
+              class="d-inline"
+              onsubmit="return confirm('Confermi l\'eliminazione del progetto: {{$project->title}}?')">
+              @csrf
+
+              @method('DELETE')
+
+              <button type="submit" class="btn btn-danger" title="Delete"><i class="fa-solid fa-trash-can"></i></button>
+            </form>
           </td>
         </tr>
         @endforeach
