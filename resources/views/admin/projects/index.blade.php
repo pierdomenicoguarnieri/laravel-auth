@@ -28,13 +28,15 @@
               echo date_format($date, 'd/m/Y');
             @endphp
           </td>
-          <td class="text-center">@if ($project->finished)
+          <td class="text-center">
+            @if ($project->finished)
               <i class="fa-solid fa-check" style="color: #26a269;"></i>
             @else
             <i class="fa-solid fa-x" style="color: #e01b24;"></i>
-            @endif</td>
+            @endif
+          </td>
           <td class="text-center">
-            <a href="" class="btn btn-primary" title="Show"><i class="fa-solid fa-eye"></i></a>
+            <a href="{{route('admin.projects.show', $project)}}" class="btn btn-primary" title="Show"><i class="fa-solid fa-eye"></i></a>
             <a href="" class="btn btn-warning" title="Edit"><i class="fa-solid fa-pencil"></i></a>
             <a href="" class="btn btn-danger" title="Delete"><i class="fa-solid fa-trash-can"></i></a>
           </td>
