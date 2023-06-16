@@ -19,7 +19,7 @@ return new class extends Migration
       $table->text('description')->nullable();
       $table->string('slug')->unique();
       $table->date('start_date');
-      $table->date('end_date');
+      $table->date('end_date')->nullable();
       $table->string('used_languages');
       $table->integer('commits')->unsigned()->nullable();
       $table->boolean('finished');

@@ -6,7 +6,7 @@ return [
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
     "start_date" => "2023-06-15",
-    "end_date" => "2023-06-15",
+    "end_date" => null,
     "used_languages" => ["PHP", "Blade", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 15,
     "finished" => false
@@ -16,7 +16,7 @@ return [
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
     "start_date" => "2023-06-14",
-    "end_date" => "2023-06-14",
+    "end_date" => null,
     "used_languages" => ["PHP", "Blade", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 34,
     "finished" => false
