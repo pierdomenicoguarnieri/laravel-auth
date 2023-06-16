@@ -17,7 +17,7 @@
         </tr>
         <tr>
           <th scope="row" class="w-25 border border-end">Description</th>
-          <td>{{$project->description}}</td>
+          <td>{!!$project->description!!}</td>
         </tr>
         <tr>
           <th scope="row" class="w-25 border border-end">Slug</th>
