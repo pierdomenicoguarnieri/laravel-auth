@@ -5,7 +5,8 @@ return [
     "title" => "Laravel Auth",
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
-    "date" => "2023-06-15",
+    "start_date" => "2023-06-15",
+    "end_date" => "2023-06-15",
     "used_languages" => ["PHP", "Blade", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 15,
     "finished" => false
@@ -14,7 +15,8 @@ return [
     "title" => "Laravel Git Flow",
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
-    "date" => "2023-06-14",
+    "start_date" => "2023-06-14",
+    "end_date" => "2023-06-14",
     "used_languages" => ["PHP", "Blade", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 34,
     "finished" => false
@@ -23,7 +25,8 @@ return [
     "title" => "Laravel Migration Seeder",
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
-    "date" => "2023-06-13",
+    "start_date" => "2023-06-13",
+    "end_date" => "2023-06-13",
     "used_languages" => ["PHP", "Blade", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 8,
     "finished" => true
@@ -32,7 +35,8 @@ return [
     "title" => "PHP Bad Words",
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
-    "date" => "2023-05-16",
+    "start_date" => "2023-05-16",
+    "end_date" => "2023-05-16",
     "used_languages" => ["PHP", "HTML", "CSS"],
     "commits" => 8,
     "finished" => true
@@ -41,7 +45,8 @@ return [
     "title" => "Vite Boolflix",
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
-    "date" => "2023-05-09",
+    "start_date" => "2023-05-03",
+    "end_date" => "2023-05-09",
     "used_languages" => ["Vue", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 72,
     "finished" => true
@@ -50,7 +55,8 @@ return [
     "title" => "Proj Html Vuejs",
     "description" => "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi itaque. Placeat ipsam iusto totam doloremque culpa, corrupti vitae temporibus tenetur sequi cumque unde voluptatem repudiandae, corporis magnam deserunt officia. Quas facilis eius quos libero quam atque reprehenderit tenetur saepe? Nobis repellat consequatur maxime nesciunt dicta quo eaque voluptate. Veritatis saepe non accusantium. Amet repudiandae, quia eos necessitatibus facere fugit magnam, eum molestias voluptatem neque molestiae sint commodi aut animi eligendi! Neque, tempora natus exercitationem impedit aspernatur quasi? Consectetur eaque unde doloribus consequuntur, vitae voluptate harum magni soluta nemo molestiae ipsam praesentium sed iste. Inventore exercitationem minus minima quam.",
 
-    "date" => "2023-05-12",
+    "start_date" => "2023-05-09",
+    "end_date" => "2023-05-12",
     "used_languages" => ["Vue", "JavaScript", "HTML", "CSS", "SCSS"],
     "commits" => 78,
     "finished" => true

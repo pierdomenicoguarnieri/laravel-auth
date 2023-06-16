@@ -21,7 +21,8 @@ class ProjectsTableSeeder extends Seeder
       $new_project->title = $project['title'];
       $new_project->description = $project['description'];
       $new_project->slug = Project::generateSlug($new_project->title);
-      $new_project->date = $project['date'];
+      $new_project->start_date = $project['start_date'];
+      $new_project->end_date = $project['end_date'];
       $new_project->used_languages = implode('|', $project['used_languages']);
       $new_project->commits = $project['commits'];
       $new_project->finished = $project['finished'];
