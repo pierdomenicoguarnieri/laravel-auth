@@ -31,7 +31,9 @@
     @include('admin.partials.header')
 
     <main class="d-flex">
-      @include('admin.partials.aside')
+      @auth
+        @include('admin.partials.aside')
+      @endauth
 
       <div class="pg-content-wrapper">
         @yield('content')
