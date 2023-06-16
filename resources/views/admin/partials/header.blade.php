@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
         <div class="logo_laravel">
-          <img src="/img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+          <img src="/img/logo.png" alt="Logo" width="40" class="d-inline-block align-text-top">
         </div>
         {{-- config('app.name', 'Laravel') --}}
       </a>

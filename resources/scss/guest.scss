@@ -1,1 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
+
+header{
+  height: 70px;
+}
+
+main{
+  height: calc(100vh - 70px);
+}

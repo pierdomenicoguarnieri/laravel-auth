@@ -10,6 +10,7 @@
 
     <title>Laravel Boolfolio | @yield('title')</title>
 
+    <link rel="shortcut icon" href="/img/logo.png" type="png">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">

@@ -2,7 +2,7 @@
   <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg shadow-sm" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{route('home')}}">
-        <img src="/img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+        <img src="/img/logo.png" alt="Logo" width="40" class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
