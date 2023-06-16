@@ -17,9 +17,11 @@ return new class extends Migration
       $table->id();
       $table->string('title');
       $table->string('description')->nullable();
+      $table->string('slug')->unique();
       $table->date('date');
       $table->string('used_languages');
-      $table->integer('commits')->unsigned();
+      $table->integer('commits')->unsigned()->nullable();
+      $table->boolean('finished');
       $table->timestamps();
     });
   }
