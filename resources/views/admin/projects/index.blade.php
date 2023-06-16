@@ -13,6 +13,7 @@
           <th scope="col" class="text-center">#ID</th>
           <th scope="col">Title</th>
           <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
           <th scope="col" class="text-center">Finished</th>
           <th scope="col" class="text-center">Actions</th>
         </tr>
@@ -27,6 +28,16 @@
               $date = date_create($project->start_date);
               echo date_format($date, 'd/m/Y');
             @endphp
+          </td>
+          <td>
+            @if ($project->end_date)
+              @php
+                $date = date_create($project->end_date);
+                echo date_format($date, 'd/m/Y');
+              @endphp
+            @else
+              <span class="text-danger">No date</span>
+            @endif
           </td>
           <td class="text-center">
             @if ($project->finished)

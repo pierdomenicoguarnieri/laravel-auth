@@ -10,6 +10,17 @@ class Project extends Model
 {
   use HasFactory;
 
+  protected $fillable = [
+    'title',
+    'description',
+    'slug',
+    'start_date',
+    'end_date',
+    'used_languages',
+    'commits',
+    'finished'
+  ];
+
   public static function generateSlug($str){
     $slug = Str::slug($str, '-');
     $original_slug = $slug;
@@ -17,9 +28,9 @@ class Project extends Model
     $slug_exixts = Project::where('slug', $slug)->first();
     $c = 1;
     while($slug_exixts){
-        $slug = $original_slug . '-' . $c;
-        $slug_exixts = Project::where('slug', $slug)->first();
-        $c++;
+      $slug = $original_slug . '-' . $c;
+      $slug_exixts = Project::where('slug', $slug)->first();
+      $c++;
     }
 
     return $slug;
