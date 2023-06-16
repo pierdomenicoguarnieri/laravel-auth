@@ -1,6 +1,6 @@
-<header>
-  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-    <div class="container">
+<header class="shadow-sm">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
         <div class="logo_laravel">
           <img src="/img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">
