@@ -38,6 +38,7 @@
       <label for="description" class="form-label">Descrizione</label>
       <textarea
         type="text"
+        id="description"
         class="form-control @error('description') is-invalid @enderror"
         placeholder="Descrizione"
         name="description">{{old('description')}}</textarea>
@@ -114,4 +115,13 @@
     <button type="submit" class="btn btn-success mb-5">Crea</button>
   </form>
 </div>
+
+<script>
+ClassicEditor
+  .create( document.querySelector( '#description' ) )
+  .catch( error => {
+    console.error( error );
+  } );
+</script>
+
 @endsection

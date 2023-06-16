@@ -40,9 +40,10 @@
       <label for="description" class="form-label">Descrizione</label>
       <textarea
         type="text"
+        id="description"
         class="form-control @error('description') is-invalid @enderror"
         placeholder="Descrizione"
-        name="description">{{old('description', $project->dscription)}}</textarea>
+        name="description">{{old('description', $project->description)}}</textarea>
         @error('decription')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -112,8 +113,15 @@
       @enderror
     </div>
 
-
     <button type="submit" class="btn btn-success mb-5">Crea</button>
   </form>
 </div>
+
+<script>
+  ClassicEditor
+    .create( document.querySelector( '#description' ) )
+    .catch( error => {
+      console.error( error );
+    } );
+  </script>
 @endsection
