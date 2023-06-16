@@ -3,11 +3,13 @@
 @section('content')
 <div class="container py-4">
   <h2 class="fs-4 text-secondary mb-4">
-    Create new project
+    Edit {{$project->title}}
   </h2>
 
-  <form action="{{route('admin.projects.store')}}" method="POST">
+  <form action="{{route('admin.projects.update', $project)}}" method="POST">
     @csrf
+
+    @method('PUT')
 
     @if($errors->any())
 
@@ -28,7 +30,7 @@
         class="form-control @error('title') is-invalid @enderror"
         placeholder="Titolo"
         name="title"
-        value="{{old('title')}}">
+        value="{{old('title', $project->title)}}">
         @error('title')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -40,7 +42,7 @@
         type="text"
         class="form-control @error('description') is-invalid @enderror"
         placeholder="Descrizione"
-        name="description">{{old('description')}}</textarea>
+        name="description">{{old('description', $project->dscription)}}</textarea>
         @error('decription')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -53,7 +55,7 @@
         class="form-control @error('start_date') is-invalid @enderror"
         placeholder="YYYY-MM-DD"
         name="start_date"
-        value="{{old('start_date')}}">
+        value="{{old('start_date', $project->start_date)}}">
         @error('start_date')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -66,7 +68,7 @@
         class="form-control @error('end_date') is-invalid @enderror"
         placeholder="YYYY-MM-DD"
         name="end_date"
-        value="{{old('end_date')}}">
+        value="{{old('end_date', $project->end_date)}}">
         @error('end_date')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -79,7 +81,7 @@
         class="form-control @error('used_languages') is-invalid @enderror"
         placeholder="PHP|Laravel|JavaScript"
         name="used_languages"
-        value="{{old('used_languages')}}">
+        value="{{old('used_languages', $project->used_languages)}}">
         @error('used_languages')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -92,7 +94,7 @@
         class="form-control"
         placeholder="0"
         name="commits"
-        value="{{old('commits')}}">
+        value="{{old('commits', $project->commits)}}">
         @error('commits')
           <span class="text-danger">{{$message}}</span>
         @enderror
