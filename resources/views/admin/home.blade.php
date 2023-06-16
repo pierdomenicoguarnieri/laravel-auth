@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 
+@section('title')
+  Home Dashboard
+@endsection
+
 @section('content')
 
   <div class="container py-4">

@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 
+@section('title')
+  Create New Project
+@endsection
+
 @section('content')
 <div class="container py-4">
   <h2 class="fs-4 text-secondary mb-4">

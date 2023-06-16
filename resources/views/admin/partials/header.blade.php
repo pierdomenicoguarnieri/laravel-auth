@@ -35,7 +35,7 @@
               </li>
             @endif
           @else
-            <li class="nav-item">
+            <li class="nav-item pg-cursor">
               <span class="nav-link">{{Auth::user()->name}}</span>
             </li>
 

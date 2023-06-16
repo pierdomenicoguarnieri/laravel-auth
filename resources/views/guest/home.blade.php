@@ -6,10 +6,10 @@
 
 @section('content')
   <main class="bg-dark text-white vh-100">
-    <div class="container py-5">
+    <div class="container d-flex align-items-center flex-column py-5">
       <h1 class="mb-4">Home</h1>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum nam voluptatibus dignissimos numquam. Iure eum mollitia, excepturi officia eos nihil nemo nostrum natus esse veniam, modi dicta dolorem perspiciatis.</p>
+      <p class="fs-5 py-5">Benvenuto nel portfolio di Pierdomenico Guarnieri! Non c'è molto da fare, a meno che tu non conosca il segreto del sito...</p>
     </div>
   </main>
 @endsection
