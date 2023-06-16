@@ -5,7 +5,7 @@
       <a href="{{route('admin.home')}}"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a>
     </li>
 
-    <li class="w-100 py-2 {{Route::currentRouteName() === 'admin.projects.index' || Route::currentRouteName() === 'admin.projects.show' || Route::currentRouteName() === 'admin.project.edit' ?  'active' : ''}}">
+    <li class="w-100 py-2 {{Route::currentRouteName() === 'admin.projects.index' || Route::currentRouteName() === 'admin.projects.show' || Route::currentRouteName() === 'admin.projects.edit' ?  'active' : ''}}">
       <a href="{{route('admin.projects.index')}}"><i class="fa-solid fa-diagram-project me-2"></i>Projects</a>
     </li>
 

@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-  <main class="bg-dark-subtle vh-100">
+  <main class="bg-white vh-100">
     <div class="container py-4">
       <div class="row justify-content-center">
         <div class="col-md-8">
