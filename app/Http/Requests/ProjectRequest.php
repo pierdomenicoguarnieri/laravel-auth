@@ -25,6 +25,7 @@ class ProjectRequest extends FormRequest
   {
     return [
       'title' => 'required|min:5|max:255',
+      'image' => 'nullable|image',
       'description' => 'nullable|min:20',
       'start_date' => 'required|date_format:Y-m-d|date',
       'end_date' => 'nullable|date_format:Y-m-d|date',
@@ -39,6 +40,7 @@ class ProjectRequest extends FormRequest
       'title.required' => 'Il titolo è obbligatorio',
       'title.min' => 'Il titolo deve contenere almeno :min caratteri',
       'title.max' => 'Il titolo deve contenere al massimo :max caratteri',
+      'image.image' => 'Inserisci un file avente un formato valido.',
       'description.required' => 'La descrizione è obbligatoria',
       'description.min' => 'La descrizione deve contenere almeno :min caratteri',
       'start_date.required' => 'La data è obbligatoria',
