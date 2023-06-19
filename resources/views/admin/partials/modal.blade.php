@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#{{'modal' . $project->id}}">
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#{{'modal' . $project->id}}" title="Delete">
   <i class="fa-solid fa-trash-can"></i>
 </button>
 
