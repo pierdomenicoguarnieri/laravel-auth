@@ -8,6 +8,8 @@
 <div class="container py-4">
   <h2 class="fs-4 text-secondary mb-4">
     Show "{{$project->title}}"
+    <a href="{{route('admin.projects.edit', $project)}}" class="btn btn-warning ms-2" title="Edit"><i class="fa-solid fa-pencil"></i></a>
+    @include('admin.partials.modal')
   </h2>
 
   <a href="{{route('admin.projects.index')}}" class="btn btn-primary mb-4">Torna all'index</a>
