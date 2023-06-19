@@ -14,8 +14,8 @@ return new class extends Migration
   public function up()
   {
     Schema::table('projects', function (Blueprint $table) {
-      $table->string('image_path')->after('title');
-      $table->string('image_original_name')->after('image_path');
+      $table->string('image_path')->nullable()->after('title');
+      $table->string('image_original_name')->nullable()->after('image_path');
     });
   }
 
