@@ -18,7 +18,9 @@ class Project extends Model
     'end_date',
     'used_languages',
     'commits',
-    'finished'
+    'finished',
+    'image_path',
+    'image_original_name'
   ];
 
   public static function generateSlug($str){

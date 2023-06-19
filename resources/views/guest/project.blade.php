@@ -19,6 +19,10 @@
               <td>{{$project->title}}</td>
             </tr>
             <tr>
+              <th scope="row" class="w-25 border border-end">Image</th>
+              <td><img width="200" src="{{asset('storage/' . $project->image_path)}}" alt="{{$project->title}}" title="{{$project->title}}" onerror="this.src='/img/no-image.jpg'"></td>
+            </tr>
+            <tr>
               <th scope="row" class="w-25 border border-end">Description</th>
               <td>{!!$project->description!!}</td>
             </tr>

@@ -10,7 +10,7 @@
     Create new project
   </h2>
 
-  <form action="{{route('admin.projects.store')}}" method="POST">
+  <form action="{{route('admin.projects.store')}}" method="POST" enctype="multipart/form-data">
     @csrf
 
     @if($errors->any())
@@ -34,6 +34,20 @@
         name="title"
         value="{{old('title')}}">
         @error('title')
+          <span class="text-danger">{{$message}}</span>
+        @enderror
+    </div>
+
+    <div class="mb-3">
+      <label for="image" class="form-label">Scegli un'immagine:</label>
+      <input
+        type="file"
+        class="form-control @error('image') is-invalid @enderror"
+        name="image"
+        onchange="showImg(event)"
+        value="{{old('image')}}">
+        <img src="" id="image" width="200" alt="" class="mt-4">
+        @error('image')
           <span class="text-danger">{{$message}}</span>
         @enderror
     </div>
@@ -121,11 +135,16 @@
 </div>
 
 <script>
-ClassicEditor
-  .create( document.querySelector( '#description' ) )
-  .catch( error => {
-    console.error( error );
-  } );
+  ClassicEditor
+    .create( document.querySelector( '#description' ) )
+    .catch( error => {
+      console.error( error );
+    } );
+
+  function showImg(event){
+    const tagImage = document.getElementById('image');
+    tagImage.src = URL.createObjectURL(event.target.files[0]);
+  }
 </script>
 
 @endsection
