@@ -10,7 +10,7 @@
     Edit {{$project->title}}
   </h2>
 
-  <form action="{{route('admin.projects.update', $project)}}" method="POST">
+  <form action="{{route('admin.projects.update', $project)}}" method="POST" enctype="multipart/form-data">
     @csrf
 
     @method('PUT')
@@ -36,6 +36,20 @@
         name="title"
         value="{{old('title', $project->title)}}">
         @error('title')
+          <span class="text-danger">{{$message}}</span>
+        @enderror
+    </div>
+
+    <div class="mb-3">
+      <label for="image" class="form-label">Scegli un'immagine:</label>
+      <input
+        type="file"
+        class="form-control @error('image') is-invalid @enderror"
+        name="image"
+        onchange="showImg(event)"
+        value="{{old('image')}}">
+        <img src="{{$project->image_path}}" id="image" width="200" alt="" class="mt-4" onerror="this.src='/img/no-image.jpg'">
+        @error('image')
           <span class="text-danger">{{$message}}</span>
         @enderror
     </div>
@@ -127,5 +141,10 @@
     .catch( error => {
       console.error( error );
     } );
+
+  function showImg(event){
+    const tagImage = document.getElementById('image');
+    tagImage.src = URL.createObjectURL(event.target.files[0]);
+  }
   </script>
 @endsection

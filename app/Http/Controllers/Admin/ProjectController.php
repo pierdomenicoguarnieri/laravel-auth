@@ -98,6 +98,11 @@ class ProjectController extends Controller
         $form_data['slug'] = $project->slug;
       }
 
+      if(array_key_exists('image', $form_data)){
+        $form_data['image_path'] = Storage::put('uploads', $form_data['image']);
+        $form_data['image_original_name'] = $request->file('image')->getClientOriginalName();
+      }
+
       $project->update($form_data);
 
       return redirect()->route('admin.projects.show', $project);
