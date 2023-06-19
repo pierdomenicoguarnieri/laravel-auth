@@ -68,18 +68,7 @@
           <td class="text-center">
             <a href="{{route('admin.projects.show', $project)}}" class="btn btn-primary" title="Show"><i class="fa-solid fa-eye"></i></a>
             <a href="{{route('admin.projects.edit', $project)}}" class="btn btn-warning" title="Edit"><i class="fa-solid fa-pencil"></i></a>
-
-            <form
-              action="{{route('admin.projects.destroy', $project)}}"
-              method="POST"
-              class="d-inline"
-              onsubmit="return confirm('Confermi l\'eliminazione del progetto: {{$project->title}}?')">
-              @csrf
-
-              @method('DELETE')
-
-              <button type="submit" class="btn btn-danger" title="Delete"><i class="fa-solid fa-trash-can"></i></button>
-            </form>
+            @include('admin.partials.modal')
           </td>
         </tr>
         @endforeach
