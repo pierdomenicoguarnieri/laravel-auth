@@ -1,19 +1,19 @@
 @extends('layouts.admin')
 
 @section('title')
-  Edit {{$project->title}}
+  {{$title}}
 @endsection
 
 @section('content')
 <div class="container py-4">
   <h2 class="fs-4 text-secondary mb-4">
-    Edit {{$project->title}}
+    {{$title}}
   </h2>
 
-  <form action="{{route('admin.projects.update', $project)}}" method="POST" enctype="multipart/form-data">
+  <form action="{{$route}}" method="POST" enctype="multipart/form-data">
     @csrf
 
-    @method('PUT')
+    @method($method)
 
     @if($errors->any())
 
@@ -34,7 +34,7 @@
         class="form-control @error('title') is-invalid @enderror"
         placeholder="Titolo"
         name="title"
-        value="{{old('title', $project->title)}}">
+        value="{{old('title', $project?->title)}}">
         @error('title')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -47,8 +47,8 @@
         class="form-control @error('image') is-invalid @enderror"
         name="image"
         onchange="showImg(event)"
-        value="{{old('image')}}">
-        <img src="{{$project->image_path}}" id="image" width="200" alt="" class="mt-4" onerror="this.src='/img/no-image.jpg'">
+        value="{{old('image', $project?->image_original_name)}}">
+        <img src="{{$project?->image_path}}" id="image" width="200" alt="" class="mt-4" onerror="this.src='/img/no-image.jpg'">
         @error('image')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -61,7 +61,7 @@
         id="description"
         class="form-control @error('description') is-invalid @enderror"
         placeholder="Descrizione"
-        name="description">{{old('description', $project->description)}}</textarea>
+        name="description">{{old('description', $project?->description)}}</textarea>
         @error('decription')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -74,7 +74,7 @@
         class="form-control @error('start_date') is-invalid @enderror"
         placeholder="YYYY-MM-DD"
         name="start_date"
-        value="{{old('start_date', $project->start_date)}}">
+        value="{{old('start_date', $project?->start_date)}}">
         @error('start_date')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -87,7 +87,7 @@
         class="form-control @error('end_date') is-invalid @enderror"
         placeholder="YYYY-MM-DD"
         name="end_date"
-        value="{{old('end_date', $project->end_date)}}">
+        value="{{old('end_date', $project?->end_date)}}">
         @error('end_date')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -100,7 +100,7 @@
         class="form-control @error('used_languages') is-invalid @enderror"
         placeholder="PHP|Laravel|JavaScript"
         name="used_languages"
-        value="{{old('used_languages', $project->used_languages)}}">
+        value="{{old('used_languages', $project?->used_languages)}}">
         @error('used_languages')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -113,7 +113,7 @@
         class="form-control"
         placeholder="0"
         name="commits"
-        value="{{old('commits', $project->commits)}}">
+        value="{{old('commits', $project?->commits)}}">
         @error('commits')
           <span class="text-danger">{{$message}}</span>
         @enderror
@@ -131,16 +131,16 @@
       @enderror
     </div>
 
-    <button type="submit" class="btn btn-success mb-5">Crea</button>
+    <button type="submit" class="btn btn-success mb-5">{{$msg_button}}</button>
   </form>
 </div>
 
 <script>
   ClassicEditor
-    .create( document.querySelector( '#description' ) )
-    .catch( error => {
-      console.error( error );
-    } );
+    .create(document.querySelector('#description'))
+    .catch(error => {
+      console.error(error);
+    });
 
   function showImg(event){
     const tagImage = document.getElementById('image');

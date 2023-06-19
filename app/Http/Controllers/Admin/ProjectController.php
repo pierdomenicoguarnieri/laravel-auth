@@ -33,7 +33,12 @@ class ProjectController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(){
-      return view('admin.projects.create');
+      $route = route('admin.projects.store');
+      $method = 'POST';
+      $title = 'Crea un progetto';
+      $msg_button = 'Crea';
+      $project = null;
+      return view('admin.projects.create_edit', compact('route', 'method', 'title','msg_button', 'project'));
     }
 
     /**
@@ -78,7 +83,11 @@ class ProjectController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Project $project){
-      return view('admin.projects.edit', compact('project'));
+      $route = route('admin.projects.update', $project);
+      $method = 'PUT';
+      $msg_button = 'Modifica';
+      $title = 'Modifica il progetto: "' . $project->title . '"';
+      return view('admin.projects.create_edit', compact('route', 'method', 'title', 'msg_button', 'project'));
     }
 
     /**
